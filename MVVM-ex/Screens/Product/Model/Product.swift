@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+struct Product {
+    let id: Int
+    let title: String
+    let price: Float
+    let description: String
+    let category: String
+    let image: String
+    let rating: Rate
+}
+
+struct Rate {
+    let rate: Float
+    let count: Int
+}
