@@ -119,6 +119,7 @@
                 <outlet property="priceLabel" destination="RYb-Ii-53h" id="n0p-36-Tnx"/>
                 <outlet property="productBgView" destination="MMy-s4-qZM" id="lqa-Fv-YCa"/>
                 <outlet property="productCategoryLabel" destination="KLC-Xp-uKP" id="Zsg-V1-6wT"/>
+                <outlet property="productImgView" destination="0v2-Tp-9fU" id="ME8-ce-EqE"/>
                 <outlet property="productTitleLabel" destination="g8z-9r-kfA" id="Bib-1N-7Ur"/>
                 <outlet property="rateButton" destination="lmc-e1-oRf" id="TFP-Sm-F7S"/>
             </connections>

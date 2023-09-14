@@ -15,6 +15,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var rateButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var productImgView: UIImageView!
     
     var product: Product? {
         didSet { // Property Observer
@@ -37,6 +38,7 @@ class ProductCell: UITableViewCell {
         descriptionLabel.text = product.description
         priceLabel.text = "$\(product.price)"
         rateButton.setTitle("\(product.rating.rate)", for: .normal)
+        productImgView.setImage(with: product.image)
     }
     
 }

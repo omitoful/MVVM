@@ -20,6 +20,7 @@
 		91BFDC412AB2F717009C540D /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFDC402AB2F717009C540D /* ProductViewModel.swift */; };
 		91BFDC442AB2FE65009C540D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFDC422AB2FE65009C540D /* ProductCell.swift */; };
 		91BFDC452AB2FE65009C540D /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BFDC432AB2FE65009C540D /* ProductCell.xib */; };
+		91BFDC472AB3784A009C540D /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFDC462AB3784A009C540D /* UIImageView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		91BFDC402AB2F717009C540D /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		91BFDC422AB2FE65009C540D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		91BFDC432AB2FE65009C540D /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		91BFDC462AB3784A009C540D /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		942DDE29DEFB99341A1F651F /* Pods-MVVM-ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-ex.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-ex/Pods-MVVM-ex.debug.xcconfig"; sourceTree = "<group>"; };
 		9AE8E5D6BE2AB7DE01D898BF /* Pods-MVVM-ex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-ex.release.xcconfig"; path = "Target Support Files/Pods-MVVM-ex/Pods-MVVM-ex.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +70,6 @@
 				942DDE29DEFB99341A1F651F /* Pods-MVVM-ex.debug.xcconfig */,
 				9AE8E5D6BE2AB7DE01D898BF /* Pods-MVVM-ex.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -117,6 +118,7 @@
 		9179D8AA2AB2D65D002076A0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				91BFDC462AB3784A009C540D /* UIImageView + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BFDC472AB3784A009C540D /* UIImageView + Extension.swift in Sources */,
 				91BFDC412AB2F717009C540D /* ProductViewModel.swift in Sources */,
 				9179D8B82AB2E272002076A0 /* APIManager.swift in Sources */,
 				9179D8952AB2D5C8002076A0 /* AppDelegate.swift in Sources */,
