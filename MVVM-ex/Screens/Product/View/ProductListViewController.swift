@@ -9,6 +9,7 @@ import UIKit
 
 class ProductListViewController: UIViewController {
     
+    @IBOutlet weak var productTableView: UITableView!
     private var viewModel = ProductViewModel()
 
     override func viewDidLoad() {
@@ -20,6 +21,7 @@ class ProductListViewController: UIViewController {
 extension ProductListViewController {
     
     func configuration() {
+        productTableView.register(UINib(nibName: "ProductCell", bundle: nil), forHeaderFooterViewReuseIdentifier: "ProductCell")
         initViewModel()
         observeEvent()
     }
@@ -41,5 +43,22 @@ extension ProductListViewController {
                 print(error)
             }
         }
+    }
+}
+
+extension ProductListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.products.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "") as? ProductCell else {
+            return UITableViewCell()
+        }
+        let product = viewModel.products[indexPath.row]
+        cell.product = product
+        
+        return cell
     }
 }
