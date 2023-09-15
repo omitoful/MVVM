@@ -6,6 +6,6 @@ target 'MVVM-ex' do
   use_frameworks!
 
   # Pods for MVVM-ex
-	pod 'Kingfisher', '~> 7.0'
+	pod 'Kingfisher', '~> 7.6.2'
 
 end

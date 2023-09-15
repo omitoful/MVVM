@@ -21,7 +21,7 @@ class ProductListViewController: UIViewController {
 extension ProductListViewController {
     
     func configuration() {
-        productTableView.register(UINib(nibName: "ProductCell", bundle: nil), forHeaderFooterViewReuseIdentifier: "ProductCell")
+        productTableView.register(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "ProductCell")
         initViewModel()
         observeEvent()
     }
@@ -39,6 +39,9 @@ extension ProductListViewController {
             case .stopLoading: break
             case .dataLoaded:
                 print(self.viewModel.products)
+                DispatchQueue.main.async {
+                    self.productTableView.reloadData()
+                }
             case .error(let error):
                 print(error)
             }
@@ -53,7 +56,7 @@ extension ProductListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "") as? ProductCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell") as? ProductCell else {
             return UITableViewCell()
         }
         let product = viewModel.products[indexPath.row]
