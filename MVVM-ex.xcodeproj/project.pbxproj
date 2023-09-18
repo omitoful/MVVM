@@ -22,6 +22,8 @@
 		91BFDC452AB2FE65009C540D /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BFDC432AB2FE65009C540D /* ProductCell.xib */; };
 		91BFDC472AB3784A009C540D /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFDC462AB3784A009C540D /* UIImageView + Extension.swift */; };
 		91BFDC8D2AB41BFA009C540D /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFDC8C2AB41BFA009C540D /* EndPointType.swift */; };
+		91BFDC952AB7FDD8009C540D /* AddProductViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFDC942AB7FDD8009C540D /* AddProductViewController .swift */; };
+		91BFDC972AB80576009C540D /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFDC962AB80576009C540D /* AddProduct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		91BFDC432AB2FE65009C540D /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		91BFDC462AB3784A009C540D /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		91BFDC8C2AB41BFA009C540D /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		91BFDC942AB7FDD8009C540D /* AddProductViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddProductViewController .swift"; sourceTree = "<group>"; };
+		91BFDC962AB80576009C540D /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
 		942DDE29DEFB99341A1F651F /* Pods-MVVM-ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-ex.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-ex/Pods-MVVM-ex.debug.xcconfig"; sourceTree = "<group>"; };
 		9AE8E5D6BE2AB7DE01D898BF /* Pods-MVVM-ex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-ex.release.xcconfig"; path = "Target Support Files/Pods-MVVM-ex/Pods-MVVM-ex.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +184,7 @@
 		9179D8B22AB2DAEF002076A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91BFDC942AB7FDD8009C540D /* AddProductViewController .swift */,
 				9179D8BB2AB2EC05002076A0 /* ProductListViewController.swift */,
 				91BFDC422AB2FE65009C540D /* ProductCell.swift */,
 				91BFDC432AB2FE65009C540D /* ProductCell.xib */,
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				9179D8B52AB2DB85002076A0 /* Product.swift */,
+				91BFDC962AB80576009C540D /* AddProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -330,7 +336,9 @@
 				91BFDC472AB3784A009C540D /* UIImageView + Extension.swift in Sources */,
 				91BFDC412AB2F717009C540D /* ProductViewModel.swift in Sources */,
 				9179D8B82AB2E272002076A0 /* APIManager.swift in Sources */,
+				91BFDC952AB7FDD8009C540D /* AddProductViewController .swift in Sources */,
 				9179D8952AB2D5C8002076A0 /* AppDelegate.swift in Sources */,
+				91BFDC972AB80576009C540D /* AddProduct.swift in Sources */,
 				9179D8BA2AB2E565002076A0 /* Constant.swift in Sources */,
 				9179D8972AB2D5C8002076A0 /* SceneDelegate.swift in Sources */,
 				91BFDC442AB2FE65009C540D /* ProductCell.swift in Sources */,

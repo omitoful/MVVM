@@ -26,6 +26,18 @@ final class ProductViewModel {
         }
     }
     
+    func addProduct(para: AddProduct) {
+        APIManager.shared.request(modelType: AddProduct.self,
+                                  type: EndPointItems.addProducts(product: para)) { result in
+            switch result {
+            case .success(let product):
+                self.eventHandler?(.newProductAdded(product: product))
+            case .failure(let error):
+                self.eventHandler?(.error(error))
+            }
+        }
+    }
+    
     /*
     func fetchProduct() {
         self.eventHandler?(.loading)
@@ -49,5 +61,6 @@ extension ProductViewModel {
         case stopLoading
         case dataLoaded
         case error(Error?)
+        case newProductAdded(product: AddProduct)
     }
 }

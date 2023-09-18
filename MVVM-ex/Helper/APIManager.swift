@@ -20,6 +20,9 @@ typealias Handler<T> = (Result<T, DataError>) -> Void
 class APIManager {
     
     static let shared = APIManager()
+    static var commonHeaders: [String: String] {
+        return ["Content-Type": "application/json"]
+    }
     private init() {}
     
     func request<T: Decodable >(
@@ -29,7 +32,14 @@ class APIManager {
     ) {
         guard let url = type.url else { return }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        var request = URLRequest(url: url)
+        request.httpMethod = type.methods.rawValue
+        if let para = type.body {
+            request.httpBody = try? JSONEncoder().encode(para)
+        }
+        request.allHTTPHeaderFields = type.headers
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data, error == nil else {
                 completion(.failure(.invalidData))
                 return

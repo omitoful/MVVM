@@ -34,7 +34,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Ps-0n-OeI" secondAttribute="bottom" id="tjm-Y0-xUY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Products" id="LdQ-N2-uKS"/>
+                    <navigationItem key="navigationItem" title="Products" id="LdQ-N2-uKS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="f1t-ad-lwb">
+                            <connections>
+                                <action selector="addBtnTapped:" destination="BYZ-38-t0r" id="4IJ-ah-puI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="productTableView" destination="6Ps-0n-OeI" id="qLi-vM-oH3"/>
                     </connections>
@@ -42,6 +48,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="801" y="4"/>
+        </scene>
+        <!--Add Product View Controller-->
+        <scene sceneID="Diz-yW-tb0">
+            <objects>
+                <viewController id="eK4-as-G8d" customClass="AddProductViewController" customModule="MVVM_ex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dpu-HI-DHF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1Dv-9I-Cpp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fms-VN-cpE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597" y="7"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fy2-17-P5h">

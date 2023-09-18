@@ -16,6 +16,10 @@ class ProductListViewController: UIViewController {
         super.viewDidLoad()
         configuration()
     }
+    @IBAction func addBtnTapped(_ sender: Any) {
+        let product = AddProduct(title: "IPhone")
+        viewModel.addProduct(para: product)
+    }
 }
 
 extension ProductListViewController {
@@ -44,6 +48,8 @@ extension ProductListViewController {
                 }
             case .error(let error):
                 print(error)
+            case .newProductAdded(let newProduct):
+                print(newProduct)
             }
         }
     }
